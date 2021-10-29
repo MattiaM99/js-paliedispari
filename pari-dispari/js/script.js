@@ -36,8 +36,8 @@ function somma() {
   }else if (sommaNumeri % 2 && scelta == 'pari') {
     console.log('il numero è dispari');
     document.getElementById('pari-dispari').innerHTML ='la somma tra i due numeri è ' + sommaNumeri + ' ed è dispari, hai perso';
-  return sommaNumeri;
   };
+  return sommaNumeri;
 };
 
 let risultato = somma();
