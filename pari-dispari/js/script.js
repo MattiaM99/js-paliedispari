@@ -5,6 +5,7 @@
 // Dichiariamo chi ha vinto.
 
 let scelta = prompt('pari o dispari?')
+document.getElementById('scelta').innerHTML = 'la tua scelta è ' + scelta;
 let pariDispari = parseInt(prompt('inserisci un numero da 1 a 5'));
 document.getElementById('num-utente').innerHTML = 'il tuo numero è: ' + pariDispari;
 console.log(pariDispari);
@@ -15,7 +16,7 @@ if (isNaN(pariDispari)) {
 
 function numeroRandom(min, max) { 
   return Math.floor(Math.random() * (max - min + 1) + min)
-}
+};
 
 const pcRandom = numeroRandom(1, 5);
 document.getElementById('num-comp').innerHTML = 'il numero del computer è: ' + pcRandom;
